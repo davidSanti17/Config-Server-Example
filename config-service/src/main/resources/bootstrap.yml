@@ -6,11 +6,7 @@ spring:
     config:
       server:
         git:
-          url: https://github.com/davidSanti17/Config-Server-Example.git
+          uri: https://github.com/davidSanti17/Config-Server-Example.git
           searchPaths: config-data
-          username: davidSanti17
-          password: Ch4rl3s.17
-  security:
-    user:
-      name: root
-      password: s3cr3t
+          username: ${GIT_USER}
+          password: ${GIT_PASS}
